@@ -12,7 +12,7 @@
     letter-spacing: -4px;
     position: relative;
     cursor: pointer;
-    margin-right: 120px;
+    right: 150px;
 }
 
 .HeaderLogoText::after {
@@ -31,18 +31,18 @@
 }
 
 .menu-button {
-    background: none;
+    background: none !important;
+    background-color: transparent !important; 
     border: none;
-    padding: 20px;
-    padding-left: 500px;
-    margin-left: 200px;
+    outline: none !important;
   }
-  
+
   .menu-icon {
     width: 30px;
     height: 20px;
     position: relative;
     cursor: pointer;
+    left: 100px;
   }
   
   .menu-icon span {
@@ -104,13 +104,14 @@
     .HeaderLogoText {
         margin-right: 0px;
         font-size: 38px;
+        left: 0px;
     }
 
-    .menu-button {
-        background: none;
-        border: none;
-        padding: 20px;
-        padding-left: 50px;
-        margin-left: 20px;
-      }
+    .menu-icon {
+        left: 30px;
     }
+
+    .menu-button.open {
+        border: none !important;
+      }
+}
