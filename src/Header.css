@@ -2,41 +2,13 @@
     display: flex;
     font-family: Inter;
     color: black;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: transparent;
 }
 
 .HeaderLogoText {
-    margin-right: 280px;
     font-size: 40px;
     letter-spacing: -4px;
     position: relative;
-    cursor: pointer;
-}
-
-.HeaderLogoText::after {
-    content: attr(title);
-    color: transparent;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.8s;
-}
-
-.HeaderLogoText:hover::after {
-    color: black;
-    opacity: 1;
-}
-
-.header-items {
-    display: flex;
-    margin: 20px;
-    font-size: 20px;
-    letter-spacing: -1px;
-}
-
-.item {
-    margin-right: 40px;
     cursor: pointer;
 }
