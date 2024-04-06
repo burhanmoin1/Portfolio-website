@@ -44,31 +44,31 @@ const Header = () => {
 
     return (
         <div className="main-container">
-      <div className="main-header">
-        <h1 className='HeaderLogoText' onMouseEnter={revealText} onMouseLeave={stopReveal}>B.M.</h1>
-        <button className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <div className="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-      </div>
+            <div className="main-header">
+                <h1 className='HeaderLogoText' onMouseEnter={revealText} onMouseLeave={stopReveal}>B.M.</h1>
+                <button className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </button>
+            </div>
 
-      {menuOpen && (
-        <div className="menu-overlay">
-          <div className="menu">
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-            </ul>
-          </div>
+            {menuOpen && (
+                <div className="menu-overlay">
+                <div className="menu">
+                    <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    </ul>
+                </div>
+            </div>
+            )}
         </div>
-      )}
-    </div>
-  );
-}
+        );
+    }
 
 export default Header;

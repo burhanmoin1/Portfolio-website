@@ -87,7 +87,8 @@
     }
 
     .HeaderLogoText {
-        margin-right: 0%;
+        margin-right: -10px;
+        font-size: 38px;
     }
 
     .menu-button {
