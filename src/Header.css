@@ -15,6 +15,21 @@
     margin-right: 120px;
 }
 
+.HeaderLogoText::after {
+    content: attr(title);
+    color: transparent;
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.HeaderLogoText:hover::after {
+    color: black;
+    opacity: 1;
+}
+
 .menu-button {
     background: none;
     border: none;
@@ -87,7 +102,7 @@
     }
 
     .HeaderLogoText {
-        margin-right: -10px;
+        margin-right: 0px;
         font-size: 38px;
     }
 
@@ -95,7 +110,7 @@
         background: none;
         border: none;
         padding: 20px;
-        padding-left: 150px;
-        margin-left: 60px;
+        padding-left: 50px;
+        margin-left: 20px;
       }
     }
