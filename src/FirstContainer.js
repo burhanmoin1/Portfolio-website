@@ -7,9 +7,7 @@ const FirstContainer = () => {
 
   return (
     <motion.h2
-    animate={{ y: 100 }}
-    initial={{y: 50}} 
-    transition={{type: 'spring', stiffness: 500}}
+    style={{ scaleY: scrollYprogress }}
     className="main-heading">
     Portfolio
     </motion.h2>

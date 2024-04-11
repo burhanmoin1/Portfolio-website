@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { motion } from 'framer-motion';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,15 +10,15 @@ const Header = () => {
     };
 
     return (
-        <div className="main-container">
+        <motion.div className="main-container" >
             <div className="main-header">
             <h1 className='HeaderLogoText' title=' Codecraft' >B.M.</h1>
                 <button className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="menu-icon">
+                <motion.div className="menu-icon">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </motion.div>
                 </button>
             </div>
 
@@ -33,7 +34,7 @@ const Header = () => {
                 </div>
             </div>
             )}
-        </div>
+        </motion.div>
         );
     }
 
