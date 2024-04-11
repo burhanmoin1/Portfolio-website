@@ -5,6 +5,7 @@
     justify-content: center;
     background-color: transparent;
     margin: 0px;
+    margin-bottom: -10px;
 }
 
 .HeaderLogoText {
@@ -12,89 +13,113 @@
     letter-spacing: -4px;
     position: relative;
     cursor: pointer;
-    right: 250px;
-
+    right: 400px;
 }
 
 .HeaderLogoText::after {
-    content: attr(title);
-    color: transparent;
-    position: relative;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+  content: attr(title);
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .HeaderLogoText:hover::after {
-    color: black;
-    opacity: 1;
+  color: black;
+  opacity: 1;
 }
 
 .menu-button {
-    background: none !important;
-    background-color: transparent !important; 
-    border: none;
-    outline: none !important;
-  }
+  background: none !important;
+  background-color: transparent !important; 
+  border: none;
+  outline: none !important;
+  z-index: 1000;
+}
 
-  .menu-icon {
-    width: 30px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-    left: 100px;
-  }
-  
-  .menu-icon span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #333;
-    border-radius: 9px;
-    opacity: 1;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
-  
-  .menu-icon span:nth-child(1) {
-    top: 0;
-    width: 45%;
-  }
-  
-  .menu-icon span:nth-child(2) {
-    top: 8px;
-  }
-  
-  .menu-icon span:nth-child(3) {
-    top: 16px;
-    width: 40%;
-    left: 60%;
-    transform-origin: left;
-  }
-  
-  .menu-icon span:nth-child(4) {
-    top: 16px;
-  }
-  
-  .menu-button.open .menu-icon span:nth-child(1) {
-    top: 8px;
-    width: 100%;
-    transform: rotate(50deg);
-  }
-  
-  .menu-button.open .menu-icon span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-button.open .menu-icon span:nth-child(3) {
-    top: 15px;
-    width: 100%;
-    left: 0%;
-    transform: rotate(-50deg) translateY(150%);
-  }
-  
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  left: 300px;
+  z-index: 1000;
+}
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+  width: 45%;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 16px;
+  width: 40%;
+  left: 60%;
+  transform-origin: left;
+}
+
+.menu-icon span:nth-child(4) {
+  top: 16px;
+}
+
+.menu-button.open .menu-icon span:nth-child(1) {
+  top: 8px;
+  width: 100%;
+  background: #fff;
+  transform: rotate(50deg);
+}
+
+.menu-button.open .menu-icon span:nth-child(2) {
+  opacity: 0;
+  background: #fff;
+}
+
+.menu-button.open .menu-icon span:nth-child(3) {
+  top: 15px;
+  width: 100%;
+  left: 0%;
+  background: #fff;
+  transform: rotate(-50deg) translateY(150%);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.menu-items > div {
+  margin-bottom: 20px; /* Adjust spacing between menu items */
+}
 
   @media (max-width: 767.98px) {
 
