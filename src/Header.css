@@ -122,10 +122,26 @@
   margin-bottom: 50px;
   cursor: pointer;
   letter-spacing: -2px;
+  position: relative;
 }
 
 .menu-items > div:hover {
-  color: rgb(117, 117, 139);
+  color: rgba(117, 117, 139);
+}
+
+.menu-items > div::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 10px;
+  width: 0;
+  height: 5px; 
+  background-color: white;
+  transition: width 0.3s ease; 
+}
+
+.menu-items > div:hover::after {
+  width: 50%;
 }
 
   @media (max-width: 767.98px) {

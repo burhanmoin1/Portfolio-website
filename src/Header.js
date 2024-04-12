@@ -44,7 +44,7 @@ const Header = () => {
                     variants={navContainer}
                 >
                     <div className="menu-items">
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}}>Home</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Portfolio</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}>About</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Blogs</motion.div>
