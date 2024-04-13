@@ -9,13 +9,14 @@ const Header = () => {
         visible: {
           y: 0,
           transition: {
-            duration: 0.25,
+            delay: 0.1,
             type: 'tween'
           }
         },
         hidden: {
           y: -1200,
           transition: {
+            delay: 0.1,
             duration: 0.2,
             type: 'tween'
           }

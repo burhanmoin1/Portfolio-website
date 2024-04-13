@@ -1,19 +1,19 @@
 .main-header {
-    display: flex;
-    font-family: Inter;
-    color: black;
-    justify-content: center;
-    background-color: transparent;
-    margin: 0px;
-    margin-bottom: -10px;
+  display: flex;
+  font-family: Inter;
+  color: black;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0px;
+  margin-bottom: -10px;
 }
 
 .HeaderLogoText {
-    font-size: 44px;
-    letter-spacing: -4px;
-    position: relative;
-    cursor: pointer;
-    right: 400px;
+  font-size: 44px;
+  letter-spacing: -4px;
+  position: relative;
+  cursor: pointer;
+  right: 400px;
 }
 
 .HeaderLogoText::after {
@@ -23,12 +23,12 @@
   top: 0;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-}
+  }
 
 .HeaderLogoText:hover::after {
   color: black;
   opacity: 1;
-}
+  }
 
 .menu-button {
   background: none !important;
@@ -36,16 +36,16 @@
   border: none;
   outline: none !important;
   z-index: 1000;
-}
+  }
 
 .menu-icon {
-  width: 30px;
+  width: 34px;
   height: 20px;
   position: relative;
   cursor: pointer;
   left: 300px;
   z-index: 1000;
-}
+  }
 
 .menu-icon span {
   display: block;
@@ -61,17 +61,18 @@
 
 .menu-icon span:nth-child(1) {
   top: 0;
-  width: 45%;
+  width: 40%;
 }
 
 .menu-icon span:nth-child(2) {
   top: 8px;
+  width: 95%;
 }
 
 .menu-icon span:nth-child(3) {
   top: 16px;
-  width: 40%;
-  left: 60%;
+  width: 50%;
+  left: 48%;
   transform-origin: left;
 }
 
@@ -114,46 +115,42 @@
 .menu-items {
   text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .menu-items > div {
   margin-top: 80px;
   margin-bottom: 50px;
   cursor: pointer;
-  letter-spacing: -2px;
+  letter-spacing: -4.4px;
   position: relative;
 }
 
 .menu-items > div:hover {
-  color: rgba(117, 117, 139);
+  color: rgb(168, 168, 177);
 }
 
 .menu-items > div::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 10px;
+  bottom: 0;
+  left: 32px;
   width: 0;
-  height: 5px; 
+  height: 10px; 
   background-color: white;
   transition: width 0.3s ease; 
 }
 
 .menu-items > div:hover::after {
-  width: 50%;
+  width: 40%;
 }
 
   @media (max-width: 767.98px) {
 
-    .main-header{
-        margin: 0%;
-    }
-
     .HeaderLogoText {
         margin-right: 80px;
         font-size: 34px;
-        left: -10px;
+        left: -2px;
         right: 0px;
     }
 
@@ -167,5 +164,18 @@
 
     .menu-items {
         font-size: 1.8rem;
+      }
+
+      .menu-items > div {
+        letter-spacing: -2.4px;
+      }
+
+      .menu-items > div::after {
+        left: 14px;
+        height: 5px; 
+      }
+
+      .menu-items > div:hover::after {
+        width: 50%;
       }
 }
