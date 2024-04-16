@@ -8,7 +8,7 @@
     margin-top: 20px;
 }
 
-.first-revolve-text{
+.first-paragraph{
     font-weight: 500;
     font-size: 2.5em;
     margin-top: -40px;
@@ -20,7 +20,6 @@
 
 .first-heading {
     font-size: 7em;
-    transform: translateX(-40%);
     font-weight: 700;
     margin-top: 20px;
     text-align: start;
@@ -38,19 +37,19 @@
         margin-top: 20px;
     }
     
-    .first-revolve-text{
+    .first-paragraph{
         font-weight: 500;
         font-size: 1.8em;
         margin-top: -40px;
         text-align: end;
         padding: 10px;
         width: 100%;
-        transform: translateX(0%);
+        transform: translateX(0%) !important;
     }
     
     .first-heading {
         font-size: 4em;
-        transform: translateX(-8%);
+        transform: translateX(-8%) !important;
         font-weight: 700;
         margin-top: 20px;
         text-align: start;

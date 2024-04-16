@@ -26,7 +26,7 @@ const Header = () => {
     return (
         
         <motion.div className="main-header">
-            <motion.h1 initial={{y: -100}} animate={{y:0}} transition={{type: "tween", stiffness: 500, delay: 0.2}}
+            <motion.h1 initial={{y: -100}} animate={{y:0}} transition={{type: "tween", stiffness: 500, delay: 1}}
                 className='HeaderLogoText' title=' Codecraft' >B.M. 
             </motion.h1>
             <motion.button initial={{opacity: 0}} animate={{opacity:1}} transition={{duration: 0.8}} className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
