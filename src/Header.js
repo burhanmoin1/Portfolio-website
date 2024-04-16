@@ -26,10 +26,10 @@ const Header = () => {
     return (
         
         <motion.div className="main-header">
-            <motion.h1 initial={{y: -100}} animate={{y:0}} transition={{type: "tween", stiffness: 500, delay: 1}}
+            <motion.h1 initial={{y: -10, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 0.6, type: "tween", delay: 1.8}}
                 className='HeaderLogoText' title=' Codecraft' >B.M. 
             </motion.h1>
-            <motion.button initial={{opacity: 0}} animate={{opacity:1}} transition={{duration: 0.8}} className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+            <motion.button initial={{y: -10, opacity:0}} animate={{y:0, opacity: 1}} transition={{duration: 0.6, type: "tween", delay: 1.8}} className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
                 <motion.div className="menu-icon">
                     <span></span>
                     <span></span>
