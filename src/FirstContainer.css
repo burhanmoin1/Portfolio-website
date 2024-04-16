@@ -14,8 +14,9 @@
     margin-top: 20px;
     text-align: start;
     opacity: 0;
-    animation: 0.5s hey ease-in-out forwards;
+    animation: 0.8s hey ease-in-out forwards;
     animation-delay: 0.2s;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 16 0,auto;
 }
 
 .first-paragraph{
@@ -23,32 +24,32 @@
     font-size: 2.5em;
     text-align: end;
     padding: 10px;
-    width: 40%;
+    width: 50%;
     opacity: 0;
-    transform: translateX(20%) !important;
-    animation: 0.5s para-animate ease-in forwards;
-    animation-delay: 0.5s;
+    transform: translateX(10%) !important;
+    animation: 0.4s para-animate ease-in forwards;
+    animation-delay: 0.8s;
 }
 
 @keyframes para-animate {
-    from {margin-top: -40px;}
-    to {margin-top: -60px; opacity: 1;}
+    from {margin-top: -94px; opacity: 0;}
+    to {margin-top: -100px; opacity: 1;}
 }
 
 @keyframes para-animate-mobile {
-    from {margin-top: -20px;}
+    from {margin-top: -30px;}
     to {margin-top: -40px; opacity: 1;}
 }
 
 @keyframes hey {
     from {
         opacity: 0;
-        transform: translateX(-34%);
+        transform: translateX(-44%);
       }
   
       to {
         opacity: 1;
-        transform: translateX(-30%);
+        transform: translateX(-40%);
       }
     }
 
@@ -84,8 +85,8 @@
         padding: 10px;
         width: 100%;
         transform: translateX(0%) !important;
-        animation: 0.5s para-animate-mobile ease-in forwards;
-        animation-delay: 1.1s;
+        animation: 0.4s para-animate-mobile ease-in forwards;
+        animation-delay: 0.8s;
     }
     
     .first-heading {
@@ -93,7 +94,7 @@
         font-weight: 700;
         margin-top: 20px;
         text-align: start;
-        animation: 0.7s hey-mobile ease-in-out forwards;
+        animation: 0.8s hey-mobile ease-in-out forwards;
         animation-delay: 0.2s;
     }
 }
