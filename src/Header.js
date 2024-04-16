@@ -24,6 +24,7 @@ const Header = () => {
       };
 
     return (
+        
         <motion.div className="main-header">
             <motion.h1 initial={{y: -100}} animate={{y:0}} transition={{type: "tween", stiffness: 500, delay: 0.2}}
                 className='HeaderLogoText' title=' Codecraft' >B.M. 
@@ -46,15 +47,16 @@ const Header = () => {
                 >
                     <div className="menu-items">
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Portfolio</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}>About</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Blogs</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.38}}>Contact</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}>What I Do</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.38}}>Reviews</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
                     </div>
                 </motion.div>
             )}
             </AnimatePresence>
-        </motion.div>  
+        </motion.div>
         );
     }
 
