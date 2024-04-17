@@ -21,10 +21,10 @@
 
 .first-paragraph{
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.6em;
     text-align: end;
     padding: 10px;
-    width: 50%;
+    width: 40%;
     opacity: 0;
     transform: translateX(10%) !important;
     animation: 0.4s para-animate ease-in forwards;
@@ -80,7 +80,7 @@
     
     .first-paragraph{
         font-weight: 500;
-        font-size: 1.8em;
+        font-size: 2em;
         text-align: end;
         padding: 10px;
         width: 100%;
