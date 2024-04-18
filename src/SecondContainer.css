@@ -19,8 +19,8 @@
     animation: scroll-up-for-black-container linear forwards;
     animation-timeline: view();
     opacity: 0;
-    animation-range-start: 200px;
-    animation-range-end: 600px;
+    animation-range-start: 100px;
+    animation-range-end: 800px;
 }
 
 .second-paragraph {
@@ -51,6 +51,8 @@
         transform: scale(1);
       }
     }
+
+
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .second-container {
@@ -63,6 +65,8 @@
         height: 60vh;
         background-color: black;
         margin: 0px;
+        animation-range-start: 200px;
+        animation-range-end: 400px;
     }
     
     .second-paragraph {

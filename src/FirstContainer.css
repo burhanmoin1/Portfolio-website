@@ -35,7 +35,7 @@
     border-radius: 18px;
     margin: 40px;
     margin-left: 40px;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: black;
     border: none;
     opacity: 0;
@@ -46,7 +46,6 @@
   .arrow-button:hover {
     cursor: pointer;
   }
-
 @keyframes para-animate {
     from {margin-top: -94px; opacity: 0;}
     to {margin-top: -100px; opacity: 1;}
