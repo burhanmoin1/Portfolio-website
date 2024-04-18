@@ -1,5 +1,6 @@
 import React from "react";
 import "./FirstContainer.css";
+import {motion} from 'framer-motion';
 
 function FirstContainer () {
 
@@ -32,7 +33,7 @@ function FirstContainer () {
     <div className="first-container">
       <h2 className='first-heading'><span className="hey">Hey,</span><br></br><span className="burhan"> I'm Burhan </span></h2>
       <p className='first-paragraph'>— an expert full stack web developer, assisting clients with all of their web development needs.</p>
-      <button className="arrow-button" onClick={handleButtonClick}>&#8595;</button>
+      <motion.button animate={{ scale: [1, 1.3, 1] }} transition={{repeat: Infinity, duration: 3, delay:1}}  className="arrow-button" onClick={handleButtonClick}>&#8595;</motion.button>
     </div>
   );
 }

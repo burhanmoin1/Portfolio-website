@@ -32,21 +32,19 @@
 }
 
 .arrow-button{
-    width: 80px;
     border-radius: 18px;
     margin: 40px;
     margin-left: 40px;
-    font-size: large;
+    font-size: 2.2rem;
     color: black;
+    border: none;
     opacity: 0;
     background-color: transparent;
-    animation: 0.4s arrow-waiter ease-in forwards;
-    animation-delay: .8s;
+    animation: 0.4s arrow-waiter ease-in forwards 0.9s;
   }
   
   .arrow-button:hover {
-    color: black;
-    background-color: rgb(168, 168, 177);
+    cursor: pointer;
   }
 
 @keyframes para-animate {
