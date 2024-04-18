@@ -31,9 +31,32 @@
     animation-delay: 0.8s;
 }
 
+.arrow-button{
+    width: 80px;
+    border-radius: 18px;
+    margin: 40px;
+    margin-left: 40px;
+    font-size: large;
+    color: black;
+    opacity: 0;
+    background-color: transparent;
+    animation: 0.4s arrow-waiter ease-in forwards;
+    animation-delay: .8s;
+  }
+  
+  .arrow-button:hover {
+    color: black;
+    background-color: rgb(168, 168, 177);
+  }
+
 @keyframes para-animate {
     from {margin-top: -94px; opacity: 0;}
     to {margin-top: -100px; opacity: 1;}
+}
+
+@keyframes arrow-waiter {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes para-animate-mobile {
@@ -75,8 +98,12 @@
         padding: 40px;
         letter-spacing: -2px;
         margin-top: 20px;
-        
     }
+
+    .arrow-button{
+        margin: 20px;
+        margin-left: 32px;
+      }
     
     .first-paragraph{
         font-weight: 500;

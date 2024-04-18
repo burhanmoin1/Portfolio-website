@@ -1,6 +1,6 @@
 .second-container {
     display: flex;
-    height: 50vh;
+    height: 80vh;
     background-color: white;
     justify-content: center;
     margin: 40px;
@@ -8,25 +8,49 @@
 }
 
 .black-container-for-second{
-    height: 40vh;
+    height: 60vh;
     background-color: black;
     display: flex;
     justify-content: center;
-    margin: 80px;
-    border-radius: 14px;
+    margin: 100px;
+    border-radius: 34px;
     flex-direction: column;
     align-items: center;
+    animation: scroll-up-for-black-container linear forwards;
+    animation-timeline: view();
+    opacity: 0;
+    animation-range-start: 200px;
+    animation-range-end: 600px;
 }
 
 .second-paragraph {
     color: white;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     text-align: center;
-    width: 64%;
+    width: 78%;
     letter-spacing: -1px;
-    line-height: 40px;
+    line-height: 48px;
 }
 
+@keyframes scroll-up-for-black-container {
+    0% {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+      25% {
+        opacity: 1;
+        
+        transform: scale(0.6);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .second-container {
