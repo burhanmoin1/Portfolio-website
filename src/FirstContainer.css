@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 80vh;
     padding: 40px;
     letter-spacing: -2px;
     margin-top: 20px;
@@ -19,6 +19,17 @@
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 16 0,auto;
 }
 
+.based-in-text {
+  align-self: center;
+  margin: 40px;
+  margin-left: 800px;
+  font-size: 1.2em;
+  letter-spacing: -1.5px;
+  animation: 0.4s arrow-waiter ease-in forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
 .first-paragraph{
     font-weight: 500;
     font-size: 2.8em;
@@ -29,6 +40,30 @@
     transform: translateX(10%) !important;
     animation: 0.4s para-animate ease-in forwards;
     animation-delay: 0.8s;
+}
+
+.consultation-button{
+  align-self: center;
+  margin-top: -80px;
+  margin-right: 800px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  animation: 0.4s arrow-waiter ease-in forwards;
+  animation-delay: 0.8s;
+  letter-spacing: -1px;
+  transition: transform 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.consultation-button:hover {
+  background-color: black;
+  color: white;
+  border-color: 1px solid white;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out ;
 }
 
 .arrow-button{
@@ -91,7 +126,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 50vh;
         padding: 40px;
         letter-spacing: -2px;
         margin-top: 20px;
@@ -100,6 +134,24 @@
     .arrow-button{
         margin: 20px;
         margin-left: 32px;
+      }
+
+      .based-in-text {
+        margin: 0px;
+        align-self: end;
+        margin-top: 40px;
+        font-size: 1rem;
+      }
+
+      .consultation-button{
+        align-self: start;
+        margin-top: -36px;
+        margin-right: 1px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        margin-left: -10px;
       }
     
     .first-paragraph{

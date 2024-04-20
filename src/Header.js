@@ -11,18 +11,15 @@ const Header = () => {
             setMenuOpen(false);
           }
         };
-    
-        // Attach the scroll event listener when the menu is open
+
         if (menuOpen) {
           window.addEventListener('scroll', handleScroll);
         }
-    
-        // Clean up the listener when the menu closes or the component unmounts
+ 
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
       }, [menuOpen]);
-    
 
     const navContainer = {
         visible: {
@@ -42,8 +39,7 @@ const Header = () => {
         }
       };
 
-    return (
-        
+    return ( 
         <motion.div className="main-header">
             <motion.h1 initial={{y: -10, opacity: 0}} animate={{y:0, opacity:1}} transition={{duration: 0.6, type: "tween", delay: 1.8}}
                 className='HeaderLogoText' title=' Codecraft' >B.M. 
