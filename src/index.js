@@ -4,6 +4,7 @@ import './index.css';
 import Header from './Header';
 import FirstContainer from './FirstContainer';
 import SecondContainer from './SecondContainer';
+import ThirdContainer from './ThirdContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <Header />
     <FirstContainer />
     <SecondContainer />
+    <ThirdContainer />
   </React.StrictMode>
 );
 

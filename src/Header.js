@@ -21,6 +21,31 @@ const Header = () => {
         };
       }, [menuOpen]);
 
+      const handleButtonClickWhatIDo = () => {
+        const scrollDuration = 1000;
+        const scrollStep = 40;
+    
+        let scrollAmount = 800;
+        if (window.innerWidth <= 767.98) {
+            scrollAmount = 500;
+        }
+    
+        const scrollStepAmount = scrollAmount / (scrollDuration / scrollStep);
+        let currentScroll = window.scrollY;
+    
+        const scroll = () => {
+            currentScroll += scrollStepAmount;
+            if (currentScroll >= window.scrollY + scrollAmount) {
+                window.scrollTo(0, window.scrollY + scrollAmount);
+            } else {
+                window.scrollTo(0, currentScroll);
+                requestAnimationFrame(scroll);
+            }
+        };
+    
+        scroll();
+    };
+
     const navContainer = {
         visible: {
           y: 0,
@@ -63,7 +88,7 @@ const Header = () => {
                     <div className="menu-items">
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}>What I Do</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleButtonClickWhatIDo}>What I Do</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.38}}>Reviews</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
