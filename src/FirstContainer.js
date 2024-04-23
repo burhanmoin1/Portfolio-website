@@ -5,29 +5,33 @@ import {motion} from 'framer-motion';
 function FirstContainer () {
 
   const handleButtonClick = () => {
-    const scrollDuration = 1000;
-    const scrollStep = 40;
-
     let scrollAmount = 800;
     if (window.innerWidth <= 767.98) {
-        scrollAmount = 500;
+      scrollAmount = 600;
     }
-
-    const scrollStepAmount = scrollAmount / (scrollDuration / scrollStep);
-    let currentScroll = window.scrollY;
-
-    const scroll = () => {
-        currentScroll += scrollStepAmount;
-        if (currentScroll >= window.scrollY + scrollAmount) {
-            window.scrollTo(0, window.scrollY + scrollAmount);
-        } else {
-            window.scrollTo(0, currentScroll);
-            requestAnimationFrame(scroll);
-        }
+    
+    const currentScroll = window.scrollY;
+    const targetScroll = currentScroll + scrollAmount;
+    const scrollDuration = 1000; // duration in milliseconds
+    
+    const startTime = performance.now();
+    
+    const animateScroll = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / scrollDuration, 1);
+      
+      const easing = 1 - Math.pow(1 - progress, 3); // Ease-out cubic
+      const scrollPosition = currentScroll + (scrollAmount * easing);
+      
+      window.scrollTo(0, scrollPosition);
+      
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
     };
-
-    scroll();
-};
+  
+    requestAnimationFrame(animateScroll);
+  };
 
   return (
     <div className="first-container">

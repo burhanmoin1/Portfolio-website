@@ -21,30 +21,34 @@ const Header = () => {
         };
       }, [menuOpen]);
 
-      const handleButtonClickWhatIDo = () => {
-        const scrollDuration = 1000;
-        const scrollStep = 40;
-    
+      const handleButtonClick = () => {
         let scrollAmount = 800;
         if (window.innerWidth <= 767.98) {
-            scrollAmount = 500;
+          scrollAmount = 600;
         }
-    
-        const scrollStepAmount = scrollAmount / (scrollDuration / scrollStep);
-        let currentScroll = window.scrollY;
-    
-        const scroll = () => {
-            currentScroll += scrollStepAmount;
-            if (currentScroll >= window.scrollY + scrollAmount) {
-                window.scrollTo(0, window.scrollY + scrollAmount);
-            } else {
-                window.scrollTo(0, currentScroll);
-                requestAnimationFrame(scroll);
-            }
+        
+        const currentScroll = window.scrollY;
+        const targetScroll = currentScroll + scrollAmount;
+        const scrollDuration = 200; // duration in milliseconds
+        
+        const startTime = performance.now();
+        
+        const animateScroll = (currentTime) => {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / scrollDuration, 1);
+          
+          const easing = 1 - Math.pow(1 - progress, 3);
+          const scrollPosition = currentScroll + (scrollAmount * easing);
+          
+          window.scrollTo(0, scrollPosition);
+          
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
         };
-    
-        scroll();
-    };
+      
+        requestAnimationFrame(animateScroll);
+      };
 
     const navContainer = {
         visible: {
@@ -88,7 +92,7 @@ const Header = () => {
                     <div className="menu-items">
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleButtonClickWhatIDo}>What I Do</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleButtonClick}>What I Do</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.38}}>Reviews</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
