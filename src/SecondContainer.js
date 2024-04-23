@@ -6,7 +6,6 @@ function SecondContainer () {
   const ref = useRef(null);
   const { scrollY } = useScroll({
     target: ref,
-    offset: ["start start" , "end start"],
   });
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -18,7 +17,7 @@ function SecondContainer () {
   return (
     <div  className="second-container">
         <motion.div ref={ref} style={{opacity, scale}} className="black-container-for-second">
-            <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Paired with robust and comprehensive backends, making sure that the websites are responsive, secure and meet the needs of my clients. Reflect the brand, its value and making them stand out among competitors.</p>
+            <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that the websites are responsive, secure and meet the needs of my clients.</p>
         </motion.div>
     </div>
   );

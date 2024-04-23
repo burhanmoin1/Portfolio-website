@@ -20,9 +20,9 @@
     color: white;
     font-size: 3.4rem;
     text-align: center;
-    width: 62%;
+    width: 82%;
     letter-spacing: -2.4px;
-    line-height: 50px;
+    line-height: 60px;
     font-weight: 500;
 }
 
@@ -54,13 +54,12 @@
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .second-container {
-        height: 52vh;
+        
         margin: 0px;
-        margin-top: -80px;
     }
 
     .black-container-for-second{
-        height: 50vh;
+        
         background-color: black;
         margin: 0px;
         border-radius: 18px;
@@ -68,10 +67,10 @@
     
     .second-paragraph {
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.69rem;
         text-align: center;
         width: 90%;
         line-height: 32px;
-        letter-spacing: -1.2px;
+        letter-spacing: -1.8px;
     }
 }

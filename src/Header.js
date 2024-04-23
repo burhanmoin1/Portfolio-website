@@ -21,7 +21,7 @@ const Header = () => {
         };
       }, [menuOpen]);
 
-      const handleButtonClick = () => {
+      const handleWhatIDoButtonClick = () => {
         let scrollAmount = 800;
         if (window.innerWidth <= 767.98) {
           scrollAmount = 600;
@@ -29,7 +29,7 @@ const Header = () => {
         
         const currentScroll = window.scrollY;
         const targetScroll = currentScroll + scrollAmount;
-        const scrollDuration = 200; // duration in milliseconds
+        const scrollDuration = 500;
         
         const startTime = performance.now();
         
@@ -37,7 +37,7 @@ const Header = () => {
           const elapsed = currentTime - startTime;
           const progress = Math.min(elapsed / scrollDuration, 1);
           
-          const easing = 1 - Math.pow(1 - progress, 3);
+          const easing = 1 - Math.pow(1 - progress, 3); // Ease-out cubic
           const scrollPosition = currentScroll + (scrollAmount * easing);
           
           window.scrollTo(0, scrollPosition);
@@ -92,7 +92,7 @@ const Header = () => {
                     <div className="menu-items">
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleButtonClick}>What I Do</motion.div>
+                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleWhatIDoButtonClick}>What I Do</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.38}}>Reviews</motion.div>
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>

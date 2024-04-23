@@ -21,10 +21,10 @@
 .based-in-text {
   align-self: end;
   margin: 40px;
-  margin-right: 300px;
-  font-size: 1.2em;
+  margin-right: 340px;
+  font-size: 1.4em;
   letter-spacing: -1.5px;
-  animation: 0.4s arrow-waiter ease-in forwards;
+  animation: 0.6s arrow-waiter ease-in forwards;
   animation-delay: 0.8s;
   opacity: 0;
 }
@@ -43,14 +43,15 @@
 
 .consultation-button{
   align-self: start;
-  margin-top: -80px;
-  margin-left: 300px;
+  margin-top: -96px;
+  margin-left: 340px;
   text-decoration: none;
   color: black;
   border: 1px solid black;
-  padding: 10px;
+  padding: 16px;
   border-radius: 6px;
-  animation: 0.4s arrow-waiter ease-in forwards;
+  font-size: 1.2rem;
+  animation: 0.6s arrow-waiter ease-in forwards;
   animation-delay: 0.8s;
   letter-spacing: -1px;
   transition: transform 0.2s ease-in-out;
@@ -126,7 +127,8 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        padding-top: 0px;
+        height: 90vh;
+        padding-top: 20px;
         letter-spacing: -2px;
     }
 
@@ -138,15 +140,16 @@
       .based-in-text {
         margin: 0px;
         align-self: end;
-        margin-top: 10px;
-        font-size: 1rem;
+        margin-top: 20px;
+        font-size: 1.2rem;
       }
 
       .consultation-button{
         align-self: start;
-        margin-top: -36px;
+        margin-top: -44px;
         margin-right: 1px;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 10px;
         text-decoration: none;
         color: black;
         border: 1px solid black;
