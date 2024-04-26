@@ -1,7 +1,6 @@
 .second-container {
     display: flex;
     height: 60vh;
-    background-color: white;
     justify-content: center;
     margin: 20px;
 }
@@ -54,7 +53,6 @@
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .second-container {
-        
         margin: 0px;
     }
 
@@ -62,14 +60,14 @@
         
         background-color: black;
         margin: 0px;
-        border-radius: 18px;
+        border-radius: 22px;
     }
     
     .second-paragraph {
         color: white;
         font-size: 1.69rem;
         text-align: center;
-        width: 90%;
+        width: 88%;
         line-height: 32px;
         letter-spacing: -1.8px;
     }

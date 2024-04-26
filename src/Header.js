@@ -7,7 +7,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-          if (menuOpen && window.scrollY > 0.1) {
+          if (menuOpen && window.scrollY > 0.01) {
             setMenuOpen(false);
           }
         };

@@ -24,8 +24,8 @@
   margin-right: 340px;
   font-size: 1.4em;
   letter-spacing: -1.5px;
-  animation: 0.6s arrow-waiter ease-in forwards;
-  animation-delay: 0.8s;
+  animation: 0.8s arrow-waiter ease-in forwards;
+  animation-delay: 1s;
   opacity: 0;
 }
 
@@ -43,16 +43,16 @@
 
 .consultation-button{
   align-self: start;
-  margin-top: -96px;
-  margin-left: 340px;
+  margin-top: -90px;
+  margin-left: 320px;
   text-decoration: none;
   color: black;
   border: 1px solid black;
-  padding: 16px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 20px;
   font-size: 1.2rem;
-  animation: 0.6s arrow-waiter ease-in forwards;
-  animation-delay: 0.8s;
+  animation: 0.8s arrow-waiter ease-in forwards;
+  animation-delay: 1s;
   letter-spacing: -1px;
   transition: transform 0.2s ease-in-out;
   opacity: 0;
@@ -146,14 +146,15 @@
 
       .consultation-button{
         align-self: start;
-        margin-top: -44px;
+        margin-top: -40px;
         margin-right: 1px;
-        font-size: 1rem;
-        padding: 10px;
+        font-size: .9rem;
+        padding: 8px;
         text-decoration: none;
         color: black;
+        border-radius: 8px;
         border: 1px solid black;
-        margin-left: -10px;
+        margin-left: -12px;
       }
     
     .first-paragraph{
