@@ -1,11 +1,37 @@
+:root {
+    --font-size-large: 1.4rem;
+    --font-weight-six: 600;
+    --letter-spaced: -2px;
+  }
+
 .frontend {
-    font-weight: 500;
+    font-weight: var(--font-weight-six);
+    font-size: var(--font-size-large); 
+    letter-spacing: var(--letter-spaced);
 }
 
 .backend {
-    font-weight: 500;
+    font-weight: var(--font-weight-six);
+    font-size: var(--font-size-large); 
+    letter-spacing: var(--letter-spaced);
 }
 
 .database {
-    font-weight: 500;
+    font-weight: var(--font-weight-six);
+    font-size: var(--font-size-large); 
+    letter-spacing: var(--letter-spaced);
+}
+
+.frontend-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.backend-image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
