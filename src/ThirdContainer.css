@@ -1,12 +1,11 @@
-.third-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 10vh;
+.frontend {
+    font-weight: 500;
 }
 
-.what-i-do-heading {
-    font-size: 6rem;
-    letter-spacing: -4px;
+.backend {
+    font-weight: 500;
+}
+
+.database {
+    font-weight: 500;
 }

@@ -1,20 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './Header';
-import FirstContainer from './FirstContainer';
-import SecondContainer from './SecondContainer';
-import ThirdContainer from './ThirdContainer';
+import Homepage from './Homepage';
 import SignUp from './SignUp';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Header />
-    <FirstContainer />
-    <SecondContainer />
-    <ThirdContainer />
-    <SignUp/>
-  </React.StrictMode>
-);
+const App = () => {
+  return (
+    <React.StrictMode>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Homepage/>} />
+          <Route path='/signup' element={<SignUp/>} />
+        </Routes>
+      </Router>
+    </React.StrictMode>
+  );
+};
 
+const domNode = document.getElementById('root');
+render(<App />, domNode);
