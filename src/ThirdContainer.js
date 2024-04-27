@@ -8,7 +8,7 @@ import cssimg from './Logos/FrontendStack/css-L.png';
 import jsgif from './Logos/FrontendStack/javascript-logo.png';
 import djangogif from './Logos/BackendStack/django-logo.png';
 import nodejlogo from './Logos/BackendStack/nodejs-logo.png';
-import cpplogo from './Logos/BackendStack/c++-logo.png';
+import cpplogo from './Logos/BackendStack/c-logo.png';
 import mongodblogo from './Logos/DatabaseStack/mongodb-logo.png';
 import mysqllogo from './Logos/DatabaseStack/mysql-logo.png';
 import githublogo from './Logos/DevOpsStack/github-logo.png';

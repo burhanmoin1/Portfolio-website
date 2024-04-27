@@ -43,11 +43,12 @@
   font-weight: 700;
 }
 
+
+
 .tech-stack {
   display: flex;
   justify-content: space-between;  
   align-items: center;    
-  
   margin: 40px;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .react-img {
-  margin: 20px;
+  margin: 30px;
   cursor: pointer;
 }
 
@@ -118,5 +119,9 @@
     width: 100%;
     height: auto;
     flex-direction: column;
+  }
+
+  .react-img {
+    margin: 20px;
   }
 }

@@ -22,7 +22,7 @@ const Header = () => {
       }, [menuOpen]);
 
       const handleWhatIDoButtonClick = () => {
-        let scrollAmount = 800;
+        let scrollAmount = 900;
         if (window.innerWidth <= 767.98) {
           scrollAmount = 600;
         }
