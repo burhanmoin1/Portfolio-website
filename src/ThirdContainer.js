@@ -45,25 +45,34 @@ return (
               </div>
               <div className="stack"> <h2 className="backend">Back-End</h2>
               <div className="backend-image-container">
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={djangogif} alt="django-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={nodejlogo} alt="nodejs-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={cpplogo} alt="cpp-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={pythonlogo} alt="python-logo" />
+                  <a href={'https://www.djangoproject.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={djangogif} alt="django-logo" /></a>
+                  <a href={'https://nodejs.org/en'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={nodejlogo} alt="nodejs-logo" /></a>
+                  <a href={'https://cplusplus.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={cpplogo} alt="cpp-logo" /></a>
+                  <a href={'https://python.org/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={pythonlogo} alt="python-logo" /></a>
                 </div>
               </div>
               <div className="stack"> <h2 className="database">Database</h2>
               <div className="backend-image-container">
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={postgreslogo} alt="mysql-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={mongodblogo} alt="mongodb-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={mysqllogo} alt="mysql-logo" />
-                  
+              <a href={'https://www.postgresql.org/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={postgreslogo} alt="mysql-logo" /></a>
+                  <a href={'https://www.mongodb.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={mongodblogo} alt="mongodb-logo" /></a>
+                  <a href={'https://www.mysql.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={mysqllogo} alt="mysql-logo" /></a>
                 </div>
               </div>
               <div className="stack"> <h2 className="database">DevOps</h2>
               <div className="backend-image-container">
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={githublogo} alt="github-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={awslogo} alt="aws-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={firebaselogo} alt="aws-logo" />
+              <a href={'https://www.github.com'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={githublogo} alt="github-logo" /></a>
+                  <a href={'https://aws.amazon.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={awslogo} alt="aws-logo" /></a>
+                  <a href={'https://firebase.google.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={firebaselogo} alt="aws-logo" /></a>
                 </div>
               </div>
             </div>
