@@ -33,10 +33,14 @@ return (
               <div className="stack">
                 <h2 className="frontend">Front-End</h2>
                 <div className="frontend-image-container">
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={reactimg} alt="react-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={htmlimg} alt="html-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={cssimg} alt="css-logo" />
-                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={jsgif} alt="javascript-logo"/>
+                <a href={'https://react.dev/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={reactimg} alt="react-logo" /></a>
+                  <a href={'https://html.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={htmlimg} alt="html-logo" /></a>
+                  <a href={'https://www.w3.org/Style/CSS/Overview.en.html'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={cssimg} alt="css-logo" /></a>
+                  <a href={'https://www.javascript.com/'} target="_blank" rel="noopener noreferrer">
+                  <motion.img whileHover={{scale:1.2, transition: {delay: 0.1}}} className="react-img" src={jsgif} alt="javascript-logo"/></a>
                 </div>
               </div>
               <div className="stack"> <h2 className="backend">Back-End</h2>

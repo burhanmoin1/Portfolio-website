@@ -39,24 +39,33 @@
   font-size: 5rem;
   text-align: center;
   width: 100%;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
   font-weight: 700;
 }
 
-
+.third-paragraph::after {
+  content: ""; /* The pseudo-element does not display any text */
+  position: absolute; /* Positions the pseudo-element absolutely */
+  bottom: 10;
+  transform: translateY(1600%);
+  left: 37%; /* Position it so that it's centered */
+  width: 26%; /* The width of the underline */
+  height: 6px; /* The thickness of the underline */
+  background-color: black; /* The color of the underline */
+}
 
 .tech-stack {
   display: flex;
   justify-content: space-between;  
   align-items: center;    
-  margin: 40px;
+  margin: 60px;
 }
 
 .stack {
   margin: 2px;
-  width: 32%;
+  width: 24%;
   border: 4px solid black;
-  height: 40vh;
+  height: 36vh;
   border-radius: 14px;
   text-align: center;
   overflow: hidden; 
@@ -100,6 +109,17 @@
       letter-spacing: -2.8px;
       line-height: 0px;
     }
+
+    .third-paragraph::after {
+      content: ""; /* The pseudo-element does not display any text */
+      position: absolute; /* Positions the pseudo-element absolutely */
+      bottom: 10;
+      transform: translateY(660%);
+      left: 18%; /* Position it so that it's centered */
+      width: 64%; /* The width of the underline */
+      height: 4px; /* The thickness of the underline */
+      background-color: black; /* The color of the underline */
+    }    
 
   .white-container-for-second{
       height: 60vh;
