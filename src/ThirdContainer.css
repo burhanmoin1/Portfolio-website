@@ -1,5 +1,5 @@
 :root {
-    --font-size-large: 1.5rem;
+    --font-size-large: 1.8rem;
     --font-weight-six: 600;
     --letter-spaced: -2px;
   }
@@ -8,18 +8,24 @@
     font-weight: var(--font-weight-six);
     font-size: var(--font-size-large); 
     letter-spacing: var(--letter-spaced);
+    background-color: rgb(210, 231, 250);
+    margin: 1px;
 }
 
 .backend {
     font-weight: var(--font-weight-six);
     font-size: var(--font-size-large); 
     letter-spacing: var(--letter-spaced);
+    background-color: rgb(210, 231, 250);
+    margin: 1px;
 }
 
 .database {
     font-weight: var(--font-weight-six);
     font-size: var(--font-size-large); 
     letter-spacing: var(--letter-spaced);
+    background-color: rgb(210, 231, 250);
+    margin: 1px;
 }
 
 .frontend-image-container {
