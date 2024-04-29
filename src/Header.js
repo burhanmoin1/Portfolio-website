@@ -24,7 +24,7 @@ const Header = () => {
       const handleWhatIDoButtonClick = () => {
         let scrollAmount = 900;
         if (window.innerWidth <= 767.98) {
-          scrollAmount = 600;
+          scrollAmount = 680;
         }
         
         const currentScroll = window.scrollY;

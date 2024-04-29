@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./SecondContainer.css";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
-function SecondContainer () {
+function SecondContainer ({refProp}) {
   const { scrollY } = useScroll();
+  const blackContainerRef = useRef();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log("Page scroll: ", latest)
@@ -13,7 +14,7 @@ function SecondContainer () {
 
   return (
     <div className="second-container">
-        <motion.div style={{opacity, scale}} className="black-container-for-second">
+        <motion.div ref={refProp} style={{opacity, scale}} className="black-container-for-second">
             <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that my solutions are responsive, secure and meet the needs of my clients.</p>
         </motion.div>
     </div>
