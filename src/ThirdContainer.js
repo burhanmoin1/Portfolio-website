@@ -23,12 +23,11 @@ function ThirdContainer () {
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log("Page scroll: ", latest)
   })
-  const opacity = useTransform(scrollY, [500, 1400], [0,1]);
-  const scale = useTransform(scrollY, [100, 1400], [0.8, 1]);
+  const opacity = useTransform(scrollY, [400, 1000], [0,1]);
 
 return (
   <motion.div style={{opacity}} className="white-container-for-second">
-    <h2 className='third-paragraph'>My Tech Stack</h2>
+    
     <div className="tech-stack">
               <div className="stack">
                 <h2 className="frontend">Frontend</h2>

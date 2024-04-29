@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 
 function SecondContainer ({refProp}) {
   const { scrollY } = useScroll();
-  const blackContainerRef = useRef();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log("Page scroll: ", latest)
@@ -15,7 +14,7 @@ function SecondContainer ({refProp}) {
   return (
     <div className="second-container">
         <motion.div ref={refProp} style={{opacity, scale}} className="black-container-for-second">
-            <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that my solutions are responsive, secure and meet the needs of my clients.</p>
+            <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that my solutions are responsive, secure and meet the needs of my clients, using the tech stack below:</p>
         </motion.div>
     </div>
   );
