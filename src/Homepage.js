@@ -56,7 +56,7 @@ function Homepage() {
   return (
     <>
       <FollowPointer position={position} pointerColor={pointerColor}/>
-      <BlackHeaderRef refProp={blackContainerRefs[1]} />
+      <Header />
       <FirstContainer />
       <BlackContainerWrapper refProp={blackContainerRefs[0]} />
       <ThirdContainer />

@@ -31,7 +31,7 @@
     height: 48vh;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10px;
     z-index: 200;
 }
 
@@ -55,7 +55,6 @@
 .stack {
   margin: 2px;
   width: 24%;
-  border: 4px solid black;
   height: 39vh;
   border-radius: 10px;
   text-align: center;

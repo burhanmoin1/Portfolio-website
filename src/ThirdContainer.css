@@ -10,7 +10,7 @@
     letter-spacing: var(--letter-spaced);
     background-color: rgb(210, 231, 250);
     margin: 1px;
-    padding: 6px;
+    padding: 2px;
 }
 
 .backend {
@@ -19,7 +19,7 @@
     letter-spacing: var(--letter-spaced);
     background-color: rgb(210, 231, 250);
     margin: 1px;
-    padding: 6px;
+    padding: 2px;
 }
 
 .database {
@@ -28,7 +28,7 @@
     letter-spacing: var(--letter-spaced);
     background-color: rgb(210, 231, 250);
     margin: 1px;
-    padding: 6px;
+    padding: 2px;
 }
 
 .frontend-image-container {
